@@ -67,6 +67,16 @@
   right: 24px;
 }
 
+form p {
+  position: absolute;
+  top: 130px;
+  color: #ebebff;
+  font-size: 18px;
+  text-align: center;
+  left: 24px;
+  right: 24px;
+}
+
 .hero p {
   color: #344563;
   font-family: 'Times New Roman', Times, serif;
@@ -152,16 +162,6 @@
     position: absolute;
     left: 120px;
     top: 90px;
-  }
-
-  form p {
-    position: absolute;
-    top: 130px;
-    color: #ebebff;
-    font-size: 18px;
-    text-align: center;
-    left: 24px;
-    right: 24px;
   }
 
   .hero p {
@@ -602,7 +602,7 @@ form button {
   }
 
   form button {
-    left: 40%;
+    left: 13%;
   }
 }
 
@@ -639,25 +639,42 @@ form button {
 @media (min-width: 768px) {
   form {
     background-image: url(./image/contact\ form-\ background-shape-desktop.png);
-    top: 2900px;
+    top: 2800px;
     width: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 
   form button {
-    top: 580px;
-    margin-left: 50px;
-  }
-}
-
-@media (min-width: 1200px) {
-  form {
-    background-image: url(./image/contact\ form-\ background-shape-desktop.png);
-    top: 2900px;
-    width: 100%;
-    margin-left: 34px;
+    top: 540px;
+    left: 40%;
   }
 
   .work-card {
-    margin-left: 120px;
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: 1158px) {
+  form {
+    background-image: url(./image/contact\ form-\ background-shape-desktop.png);
+    top: 2800px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    left: 2%;
+  }
+
+  .textinput {
+    margin-top: 80px;
+  }
+
+  form button {
+    top: 540px;
+    left: 45%;
+  }
+
+  .work-card {
+    margin-left: 40px;
   }
 }
