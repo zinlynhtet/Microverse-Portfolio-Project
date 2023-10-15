@@ -31,7 +31,7 @@ For more information on the importance of a professional README for your reposit
 <div align="center">
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
 
-  <h3><b>Portfolio Finish Mobile Version</b></h3>
+  <h3><b>Portfolio : Finish Desktop version</b></h3>
 
 </div>
 
