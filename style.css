@@ -154,6 +154,16 @@
     top: 90px;
   }
 
+  form p {
+    position: absolute;
+    top: 130px;
+    color: #ebebff;
+    font-size: 18px;
+    text-align: center;
+    left: 24px;
+    right: 24px;
+  }
+
   .hero p {
     position: absolute;
     left: 120px;
@@ -528,6 +538,7 @@
   border-bottom: 1px solid #396df2;
   border-width: 50%;
 }
+
 form {
   position: absolute;
   top: 3900px;
@@ -542,32 +553,27 @@ form {
   align-items: center;
   flex-direction: column;
 }
+
 form h1 {
   position: absolute;
   top: 45px;
   color: white;
 }
-form p {
-  position: absolute;
-  top: 130px;
-  color: #ebebff;
-  font-size: 18px;
-  text-align: center;
-  left: 24px;
-  right: 24px;
-}
+
 form input {
   margin-top: 10px;
   padding: 10px;
   width: 80%;
   margin-left: 34px;
 }
+
 .report {
-  height:180px;
+  height: 180px;
   margin-left: 34px;
   width: 80%;
   margin-top: 10px;
 }
+
 form button {
   margin-top: 10px;
   width: 120px;
@@ -579,66 +585,78 @@ form button {
   top: 540px;
   left: 34px;
 }
+
 .textinput {
   margin-top: 150px;
 }
-@media (min-width:375px){
+
+@media (min-width: 375px) {
   form {
     background-image: url(./image/contact\ form-\ background-shape-desktop.png);
     top: 4100px;
     width: 100%;
   }
-.textinput {
-  margin-left: 50px;
+
+  .textinput {
+    margin-left: 50px;
+  }
+
+  form button {
+    left: 40%;
+  }
 }
-    form button{
-     left: 40%;
-    }
-}
-@media(min-width :440px){
+
+@media (min-width: 440px) {
   form {
     top: 4300px;
   }
 }
-@media(min-width :490px) {
+
+@media (min-width: 490px) {
   form {
     top: 4500px;
   }
 }
-@media(min-width :640px) {
+
+@media (min-width: 640px) {
   form {
     top: 4700px;
   }
 }
-@media(min-width :720px) {
+
+@media (min-width: 720px) {
   form {
     top: 4800px;
   }
 }
-@media(min-width :760px) {
+
+@media (min-width: 760px) {
   form {
     top: 4900px;
   }
 }
-@media(min-width :768px) {
+
+@media (min-width: 768px) {
   form {
     background-image: url(./image/contact\ form-\ background-shape-desktop.png);
     top: 2900px;
     width: 100%;
-    
   }
-    form button {
-      top: 580px;
-      margin-left: 50px;
-    }
+
+  form button {
+    top: 580px;
+    margin-left: 50px;
+  }
 }
-@media(min-width :1200px) {
+
+@media (min-width: 1200px) {
   form {
     background-image: url(./image/contact\ form-\ background-shape-desktop.png);
     top: 2900px;
     width: 100%;
-    margin-left: 34PX;
+    margin-left: 34px;
   }
+
   .work-card {
     margin-left: 120px;
   }
