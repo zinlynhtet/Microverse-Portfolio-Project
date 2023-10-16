@@ -67,6 +67,16 @@
   right: 24px;
 }
 
+form p {
+  position: absolute;
+  top: 130px;
+  color: #ebebff;
+  font-size: 18px;
+  text-align: center;
+  left: 24px;
+  right: 24px;
+}
+
 .hero p {
   color: #344563;
   font-family: 'Times New Roman', Times, serif;
@@ -101,7 +111,7 @@
   left: 24px;
 }
 
-.lg-list > i {
+.lg-list>i {
   position: absolute;
   padding-top: 22px;
   margin: 0 0 0 12px;
@@ -109,7 +119,7 @@
   display: flex;
 }
 
-.skills > i {
+.skills>i {
   margin: 0 16px 0 0;
 }
 
@@ -152,16 +162,6 @@
     position: absolute;
     left: 120px;
     top: 90px;
-  }
-
-  form p {
-    position: absolute;
-    top: 130px;
-    color: #ebebff;
-    font-size: 18px;
-    text-align: center;
-    left: 24px;
-    right: 24px;
   }
 
   .hero p {
@@ -300,7 +300,7 @@
   line-height: 16px;
 }
 
-.brief-list > img {
+.brief-list>img {
   margin: 0 6px;
   padding: 0;
 }
@@ -331,7 +331,7 @@
   margin: 0;
 }
 
-.lang-list > li {
+.lang-list>li {
   font-family: 'Poppins', sans-serif;
   padding: 4px 12px;
   background-color: #ebebff;
@@ -347,6 +347,7 @@
   letter-spacing: 0.51px;
   margin: 12px 169px 12px 0;
   padding: 12px;
+  width: 50%;
   border-radius: 8px;
   border: 1px solid #6070ff;
   color: #396df2;
@@ -430,7 +431,7 @@
   right: 5px;
 }
 
-.lg-list > li {
+.lg-list>li {
   padding: 9px 12px 9.72px 12px;
   list-style-type: none;
   display: flex;
@@ -503,7 +504,7 @@
     top: 2450px;
   }
 
-  .lg-list > li {
+  .lg-list>li {
     display: flex;
     flex-direction: column;
     width: 120px;
@@ -541,7 +542,7 @@
 
 form {
   position: absolute;
-  top: 3900px;
+  top: 4000px;
   background-image: url(./image/Contact\ me.png);
   background-repeat: no-repeat;
   object-fit: cover;
@@ -584,6 +585,13 @@ form button {
   position: absolute;
   top: 540px;
   left: 34px;
+  cursor: pointer;
+  user-select: none;
+}
+
+button:hover {
+  color: white;
+  background-color: #6070ff;
 }
 
 .textinput {
@@ -597,12 +605,17 @@ form button {
     width: 100%;
   }
 
+  form p {
+    margin-left: 32px;
+  }
+
   .textinput {
-    margin-left: 50px;
+    margin-left: 32px;
   }
 
   form button {
-    left: 40%;
+    margin-left: 40px;
+    top: 540px;
   }
 }
 
@@ -628,36 +641,71 @@ form button {
   form {
     top: 4800px;
   }
+
+  form button {
+    margin-left: 40px;
+    top: 540px;
+  }
 }
 
 @media (min-width: 760px) {
   form {
     top: 4900px;
   }
+
+  form button {
+    margin-left: 40px;
+    top: 540px;
+  }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   form {
     background-image: url(./image/contact\ form-\ background-shape-desktop.png);
-    top: 2900px;
-    width: 100%;
+    top: 4900px;
   }
 
   form button {
-    top: 580px;
-    margin-left: 50px;
-  }
-}
-
-@media (min-width: 1200px) {
-  form {
-    background-image: url(./image/contact\ form-\ background-shape-desktop.png);
-    top: 2900px;
-    width: 100%;
-    margin-left: 34px;
+    top: 540px;
+    left: 40%;
   }
 
   .work-card {
-    margin-left: 120px;
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: 769px) {
+  form {
+    top: 2900px;
+
+  }
+}
+
+@media (min-width: 1024px) {
+  form {
+    background-image: url(./image/contact\ form-\ background-shape-desktop.png);
+    background-size: 100%;
+  }
+
+  .textinput {
+    margin-top: 80px;
+  }
+
+  form button {
+    top: 510px;
+
+  }
+
+  .work-card {
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: 1245px) {
+  form button {
+    top: 500px;
+    margin-left: 40px;
+    margin-top: 60px;
   }
 }
