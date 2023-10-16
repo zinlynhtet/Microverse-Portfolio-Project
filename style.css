@@ -66,15 +66,17 @@
   left: 24px;
   right: 24px;
 }
- form p {
-   position: absolute;
-   top: 130px;
-   color: #ebebff;
-   font-size: 18px;
-   text-align: center;
-   left: 24px;
-   right: 24px;
- }  
+
+form p {
+  position: absolute;
+  top: 130px;
+  color: #ebebff;
+  font-size: 18px;
+  text-align: center;
+  left: 24px;
+  right: 24px;
+}
+
 .hero p {
   color: #344563;
   font-family: 'Times New Roman', Times, serif;
@@ -594,9 +596,11 @@ form button {
     top: 4100px;
     width: 100%;
   }
-   form p {
+
+  form p {
     margin-left: 32px;
-   }
+  }
+
   .textinput {
     margin-left: 32px;
   }
@@ -647,35 +651,39 @@ form button {
     top: 540px;
     left: 40%;
   }
-  .work-card{
+
+  .work-card {
     margin-left: 40px;
   }
 }
+
 @media (min-width: 769px) {
   form {
     top: 2900px;
-    
   }
 }
+
 @media (min-width: 1024px) {
   form {
     background-image: url(./image/contact\ form-\ background-shape-desktop.png);
     background-size: 100%;
   }
-   .textinput {
+
+  .textinput {
     margin-top: 80px;
-   }
+  }
 
   form button {
     top: 510px;
-    
   }
+
   .work-card {
     margin-left: 40px;
   }
 }
-@media (min-width: 1176px){
+
+@media (min-width: 1176px) {
   form button {
-    top:570px;
+    top: 570px;
   }
 }
