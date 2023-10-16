@@ -66,17 +66,15 @@
   left: 24px;
   right: 24px;
 }
-
-form p {
-  position: absolute;
-  top: 130px;
-  color: #ebebff;
-  font-size: 18px;
-  text-align: center;
-  left: 24px;
-  right: 24px;
-}
-
+ form p {
+   position: absolute;
+   top: 130px;
+   color: #ebebff;
+   font-size: 18px;
+   text-align: center;
+   left: 24px;
+   right: 24px;
+ }  
 .hero p {
   color: #344563;
   font-family: 'Times New Roman', Times, serif;
@@ -596,13 +594,16 @@ form button {
     top: 4100px;
     width: 100%;
   }
-
+   form p {
+    margin-left: 32px;
+   }
   .textinput {
-    margin-left: 50px;
+    margin-left: 32px;
   }
 
   form button {
-    left: 13%;
+    margin-left: 32px;
+    top: 540px;
   }
 }
 
@@ -636,45 +637,45 @@ form button {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   form {
     background-image: url(./image/contact\ form-\ background-shape-desktop.png);
-    top: 2800px;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
+    top: 4900px;
   }
 
   form button {
     top: 540px;
     left: 40%;
   }
+  .work-card{
+    margin-left: 40px;
+  }
+}
+@media (min-width: 769px) {
+  form {
+    top: 2900px;
+    
+  }
+}
+@media (min-width: 1024px) {
+  form {
+    background-image: url(./image/contact\ form-\ background-shape-desktop.png);
+    background-size: 100%;
+  }
+   .textinput {
+    margin-top: 80px;
+   }
 
+  form button {
+    top: 510px;
+    
+  }
   .work-card {
     margin-left: 40px;
   }
 }
-
-@media (min-width: 1158px) {
-  form {
-    background-image: url(./image/contact\ form-\ background-shape-desktop.png);
-    top: 2800px;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-    left: 2%;
-  }
-
-  .textinput {
-    margin-top: 80px;
-  }
-
+@media (min-width: 1176px){
   form button {
-    top: 540px;
-    left: 45%;
-  }
-
-  .work-card {
-    margin-left: 40px;
+    top:570px;
   }
 }
