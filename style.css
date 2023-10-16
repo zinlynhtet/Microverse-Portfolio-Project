@@ -66,17 +66,15 @@
   left: 24px;
   right: 24px;
 }
-
-form p {
-  position: absolute;
-  top: 130px;
-  color: #ebebff;
-  font-size: 18px;
-  text-align: center;
-  left: 24px;
-  right: 24px;
-}
-
+ form p {
+   position: absolute;
+   top: 130px;
+   color: #ebebff;
+   font-size: 18px;
+   text-align: center;
+   left: 24px;
+   right: 24px;
+ }  
 .hero p {
   color: #344563;
   font-family: 'Times New Roman', Times, serif;
@@ -347,6 +345,7 @@ form p {
   letter-spacing: 0.51px;
   margin: 12px 169px 12px 0;
   padding: 12px;
+  width: 50%;
   border-radius: 8px;
   border: 1px solid #6070ff;
   color: #396df2;
@@ -541,7 +540,7 @@ form p {
 
 form {
   position: absolute;
-  top: 3900px;
+  top: 4000px;
   background-image: url(./image/Contact\ me.png);
   background-repeat: no-repeat;
   object-fit: cover;
@@ -584,8 +583,14 @@ form button {
   position: absolute;
   top: 540px;
   left: 34px;
+  cursor: pointer;
+  user-select: none;
 }
 
+button:hover {
+  color: white;
+  background-color: #6070ff;
+}
 .textinput {
   margin-top: 150px;
 }
@@ -596,17 +601,15 @@ form button {
     top: 4100px;
     width: 100%;
   }
-
-  form p {
+   form p {
     margin-left: 32px;
-  }
-
+   }
   .textinput {
     margin-left: 32px;
   }
 
   form button {
-    margin-left: 32px;
+    margin-left: 40px;
     top: 540px;
   }
 }
@@ -633,12 +636,20 @@ form button {
   form {
     top: 4800px;
   }
+    form button {
+      margin-left: 40px;
+      top: 540px;
+    }
 }
 
 @media (min-width: 760px) {
   form {
     top: 4900px;
   }
+    form button {
+      margin-left: 40px;
+      top: 540px;
+    }
 }
 
 @media (min-width: 769px) {
@@ -651,39 +662,37 @@ form button {
     top: 540px;
     left: 40%;
   }
-
-  .work-card {
+  .work-card{
     margin-left: 40px;
   }
 }
-
 @media (min-width: 769px) {
   form {
     top: 2900px;
+    
   }
 }
-
 @media (min-width: 1024px) {
   form {
     background-image: url(./image/contact\ form-\ background-shape-desktop.png);
     background-size: 100%;
   }
-
-  .textinput {
+   .textinput {
     margin-top: 80px;
-  }
+   }
 
   form button {
     top: 510px;
+    
   }
-
   .work-card {
     margin-left: 40px;
   }
 }
-
-@media (min-width: 1176px) {
+@media (min-width: 1245px){
   form button {
-    top: 570px;
+    top:500px;
+    margin-left: 40px;
+    margin-top: 60px;
   }
 }
