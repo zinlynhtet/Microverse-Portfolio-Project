@@ -68,13 +68,12 @@
 }
 
 form p {
-  position: absolute;
-  top: 130px;
   color: #ebebff;
   font-size: 18px;
   text-align: center;
-  left: 24px;
-  right: 24px;
+  margin-bottom: 60px;
+  margin-left: 14px;
+  margin-right: 14px;
 }
 
 .hero p {
@@ -519,10 +518,6 @@ form p {
 @media (min-width: 1240px) {
   .self-intro {
     top: 2400px;
-    right: 15%;
-  }
-
-  section {
     margin-left: 20%;
   }
 
@@ -542,7 +537,7 @@ form p {
 
 form {
   position: absolute;
-  top: 4000px;
+  top: 4200px;
   background-image: url(./image/Contact\ me.png);
   background-repeat: no-repeat;
   object-fit: cover;
@@ -551,13 +546,13 @@ form {
   height: 90vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
 }
 
 form h1 {
-  position: absolute;
-  top: 45px;
+  margin-left: 120px;
+  margin-bottom: 30px;
   color: white;
 }
 
@@ -565,6 +560,7 @@ form input {
   margin-top: 10px;
   padding: 10px;
   width: 80%;
+  border-radius: 8px;
   margin-left: 34px;
 }
 
@@ -573,6 +569,7 @@ form input {
   margin-left: 34px;
   width: 80%;
   margin-top: 10px;
+  border-radius: 8px;
 }
 
 form button {
@@ -582,11 +579,9 @@ form button {
   font-size: 17px;
   border-radius: 7px;
   color: #396df2;
-  position: absolute;
-  top: 540px;
-  left: 34px;
   cursor: pointer;
   user-select: none;
+  margin-left: 40px;
 }
 
 button:hover {
@@ -594,28 +589,14 @@ button:hover {
   background-color: #6070ff;
 }
 
-.textinput {
-  margin-top: 150px;
-}
-
 @media (min-width: 375px) {
   form {
     background-image: url(./image/contact\ form-\ background-shape-desktop.png);
-    top: 4100px;
-    width: 100%;
   }
 
   form p {
     margin-left: 32px;
-  }
-
-  .textinput {
-    margin-left: 32px;
-  }
-
-  form button {
-    margin-left: 40px;
-    top: 540px;
+    margin-right: 32px;
   }
 }
 
@@ -623,11 +604,19 @@ button:hover {
   form {
     top: 4300px;
   }
+
+  form h1 {
+    margin-left: 150px;
+  }
 }
 
 @media (min-width: 490px) {
   form {
     top: 4500px;
+  }
+
+  form h1 {
+    margin-left: 250px;
   }
 }
 
@@ -653,9 +642,8 @@ button:hover {
     top: 4900px;
   }
 
-  form button {
-    margin-left: 40px;
-    top: 540px;
+  form h1 {
+    margin-top: -100px;
   }
 }
 
@@ -663,11 +651,13 @@ button:hover {
   form {
     background-image: url(./image/contact\ form-\ background-shape-desktop.png);
     top: 4900px;
+    justify-content: center;
+    align-items: center;
   }
 
-  form button {
-    top: 540px;
-    left: 40%;
+  form h1 {
+    align-items: center;
+    margin-left: -8px;
   }
 
   .work-card {
@@ -681,18 +671,23 @@ button:hover {
   }
 }
 
+@media (min-width: 910px) {
+  form button {
+    margin-left: -60px;
+  }
+}
+
 @media (min-width: 1024px) {
   form {
     background-image: url(./image/contact\ form-\ background-shape-desktop.png);
-    background-size: 100%;
+    align-items: center;
   }
 
-  .textinput {
-    margin-top: 80px;
-  }
-
-  form button {
-    top: 510px;
+  form h1 {
+    margin-top: 10px;
+    align-items: center;
+    margin-left: -50px;
+    font-size: 35px;
   }
 
   .work-card {
@@ -701,9 +696,20 @@ button:hover {
 }
 
 @media (min-width: 1245px) {
+  form {
+    align-items: center;
+    background-size: 100%;
+  }
+
   form button {
-    top: 500px;
-    margin-left: 40px;
-    margin-top: 60px;
+    margin-left: 0;
+  }
+
+  form input {
+    width: 100%;
+  }
+
+  .report {
+    width: 100%;
   }
 }
