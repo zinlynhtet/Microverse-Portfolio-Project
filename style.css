@@ -616,6 +616,7 @@ button:hover {
   }
 
   form h1 {
+    margin-top: -100px;
     margin-left: 250px;
   }
 }
@@ -684,7 +685,7 @@ button:hover {
   }
 
   form h1 {
-    margin-top: 10px;
+    margin-top: 60px;
     align-items: center;
     margin-left: -50px;
     font-size: 35px;
@@ -700,11 +701,12 @@ button:hover {
     align-items: center;
     background-size: 100%;
   }
-
+ form h1 {
+  margin-top: -200px;
+ }
   form button {
     margin-left: 0;
   }
-
   form input {
     width: 50%;
   }
