@@ -674,7 +674,6 @@ button:hover {
 @media (min-width: 910px) {
   form button {
     margin-left: -60px;
-
   }
 }
 
@@ -712,6 +711,5 @@ button:hover {
 
   .report {
     width: 100%;
-
   }
 }
