@@ -706,10 +706,10 @@ button:hover {
   }
 
   form input {
-    width: 100%;
+    width: 50%;
   }
 
   .report {
-    width: 100%;
+    width: 50%;
   }
 }
