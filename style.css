@@ -701,12 +701,15 @@ button:hover {
     align-items: center;
     background-size: 100%;
   }
- form h1 {
-  margin-top: -200px;
- }
+
+  form h1 {
+    margin-top: -200px;
+  }
+
   form button {
     margin-left: 0;
   }
+
   form input {
     width: 50%;
   }
