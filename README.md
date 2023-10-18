@@ -31,7 +31,7 @@ For more information on the importance of a professional README for your reposit
 <div align="center">
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
 
-  <h3><b>Portfolio Finish Mobile Version</b></h3>
+  <h3><b>Portfolio : Finish Desktop version</b></h3>
 
 </div>
 
@@ -109,7 +109,7 @@ For more information on the importance of a professional README for your reposit
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://google.com)
+- [Live Demo Link](https://ordinarymack.github.io/Portfolio-Contact-form/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
