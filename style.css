@@ -71,9 +71,9 @@ form p {
   color: #ebebff;
   font-size: 18px;
   text-align: center;
-  margin-bottom: 60px;
-  margin-left: 14px;
-  margin-right: 14px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
 }
 
 .hero p {
@@ -195,6 +195,7 @@ form p {
     padding-top: 16px;
     margin-left: auto;
     margin-right: auto;
+    
   }
 
   .card-content #img2 {
@@ -260,6 +261,7 @@ form p {
   grid-template-rows: auto auto;
   gap: 10px;
   padding: 10px 24px;
+  margin-top: 50px;
 }
 
 .img {
@@ -551,9 +553,11 @@ form {
 }
 
 form h1 {
-  margin-left: 120px;
+  margin-left:auto ;
+  margin-right: auto;
   margin-bottom: 30px;
   color: white;
+  font-size: 2rem;
 }
 
 form input {
@@ -562,6 +566,7 @@ form input {
   width: 80%;
   border-radius: 8px;
   margin-left: 34px;
+  border: none;
 }
 
 .report {
@@ -569,8 +574,10 @@ form input {
   margin-left: 34px;
   width: 80%;
   margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
   border-radius: 8px;
 }
+
 
 form button {
   margin-top: 10px;
@@ -582,6 +589,7 @@ form button {
   cursor: pointer;
   user-select: none;
   margin-left: 40px;
+  border: none;
 }
 
 button:hover {
@@ -604,20 +612,11 @@ button:hover {
   form {
     top: 4300px;
   }
-
-  form h1 {
-    margin-left: 150px;
-  }
 }
 
 @media (min-width: 490px) {
   form {
     top: 4500px;
-  }
-
-  form h1 {
-    margin-top: -100px;
-    margin-left: 250px;
   }
 }
 
@@ -657,8 +656,9 @@ button:hover {
   }
 
   form h1 {
-    align-items: center;
-    margin-left: -8px;
+    margin-left: auto;
+    margin-right: auto;
+
   }
 
   .work-card {
@@ -685,9 +685,10 @@ button:hover {
   }
 
   form h1 {
-    margin-top: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
     align-items: center;
-    margin-left: -50px;
     font-size: 35px;
   }
 
@@ -700,10 +701,6 @@ button:hover {
   form {
     align-items: center;
     background-size: 100%;
-  }
-
-  form h1 {
-    margin-top: -200px;
   }
 
   form button {
