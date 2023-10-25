@@ -70,6 +70,17 @@ nav .mainMenu li a:hover {
   padding-left: 10px;
 }
 
+.lang-list li {
+  transition:
+    background-color 2s,
+    color 250ms;
+}
+
+.lang-list li:hover {
+  background-color: #396df2;
+  color: #fff;
+}
+
 @media (max-width: 768px) {
   nav .mainMenu {
     height: 100vh;
