@@ -62,7 +62,7 @@ nav .mainMenu li a {
 }
 
 nav .mainMenu li a:hover {
-  color:#1f4588;
+  color: #1f4588;
 }
 
 .logo {
@@ -74,11 +74,6 @@ nav .mainMenu li a:hover {
   transition:
     background-color 2s,
     color 250ms;
-}
-
-.lang-list li:hover {
-  background-color: #396df2;
-  color: #fff;
 }
 
 @media (max-width: 768px) {
@@ -609,6 +604,11 @@ form p {
 .Languages li {
   border-bottom: 1px solid #396df2;
   border-width: 50%;
+}
+
+.lang-list li:hover {
+  background-color: #396df2;
+  color: #fff;
 }
 
 form {
