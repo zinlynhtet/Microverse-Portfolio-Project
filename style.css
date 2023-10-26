@@ -9,6 +9,7 @@
 
 .hero {
   position: relative;
+  padding-top: 80px;
 }
 
 .main1 {
@@ -34,16 +35,6 @@ header {
   display: flex;
   justify-content: space-between;
   z-index: 100;
-}
-
-.openMenu,
-.closeMenu {
-  display: none;
-}
-
-nav .mainMenu {
-  display: flex;
-  list-style: none;
 }
 
 .logo a {
@@ -76,6 +67,18 @@ nav .mainMenu li a:hover {
     color 250ms;
 }
 
+@media screen and (min-width: 768px) {
+  nav .openMenu,
+  nav .closeMenu {
+    display: none;
+  }
+
+  nav .mainMenu {
+    display: flex;
+    list-style: none;
+  }
+}
+
 @media (max-width: 768px) {
   nav .mainMenu {
     height: 100vh;
@@ -84,6 +87,7 @@ nav .mainMenu li a:hover {
     right: 0;
     left: 0;
     z-index: 10;
+    list-style: none;
     flex-direction: column;
     justify-content: flex-start;
     padding-top: 100px;
@@ -91,7 +95,7 @@ nav .mainMenu li a:hover {
     padding-left: 30px;
     background: #6070ff;
     color: #ebebff;
-    opacity: 0.9;
+    filter: blur(0.5px);
     transition: top 1s ease;
     display: none;
   }
@@ -113,12 +117,12 @@ nav .mainMenu li a:hover {
 
   nav .mainMenu li a {
     color: #ebebff;
+    font-weight: 900;
   }
 
   nav .mainMenu li a:hover {
     background: none;
-    color: black;
-    font-size: 1.6rem;
+    color: #172b4d;
   }
 
   .logo {
@@ -197,18 +201,6 @@ form p {
 }
 
 @media (min-width: 769px) {
-  .nav-list {
-    display: flex;
-    column-gap: 2rem;
-    position: absolute;
-    right: 0;
-    margin-right: 25px;
-  }
-
-  .nav-icon {
-    display: none;
-  }
-
   .myLogo {
     margin-left: 20px;
     padding: 14px;
@@ -597,7 +589,9 @@ form p {
   }
 
   .hero {
-    margin-left: 18%;
+    padding-top: 90px;
+    margin-left: 20px;
+    margin-top: 40px;
   }
 }
 
