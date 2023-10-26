@@ -4,7 +4,6 @@ const openMenu = document.querySelector('.openMenu');
 const navTag = document.querySelector('.navTag');
 const navBag = document.querySelector('.navBag');
 const navHag = document.querySelector('.navHag');
-// eslint-disable-next-line no-use-before-define
 openMenu.addEventListener('click', show);
 
 function show() {
