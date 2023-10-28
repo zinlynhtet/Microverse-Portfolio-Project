@@ -9,6 +9,7 @@
 
 .hero {
   position: relative;
+  padding-top: 80px;
 }
 
 .main1 {
@@ -24,37 +25,109 @@
   display: none;
 }
 
-.navbar {
+header {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  z-index: 100;
 }
 
-.myLogo {
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: 600;
-  font-size: 25px;
-  left: 16px;
-  margin-left: 16px;
-  color: #6070ff;
-  padding-top: 10px;
-}
-
-.nav-list {
-  list-style: none;
-  display: none;
-}
-
-.nav-list a {
+.logo a {
   text-decoration: none;
-  font-size: 16px;
-  color: #6070ff;
+  color: #396df2;
+  font-size: 1.8rem;
 }
 
-.nav-icon {
-  color: #6070ff;
-  margin-right: 14px;
-  padding-top: 10px;
+nav .mainMenu li a {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #396df2;
+  font-size: 1.2rem;
+}
+
+nav .mainMenu li a:hover {
+  color: #1f4588;
+}
+
+.logo {
+  margin: 10px;
+  padding-left: 10px;
+}
+
+.lang-list li {
+  transition:
+    background-color 2s,
+    color 250ms;
+}
+
+@media screen and (min-width: 768px) {
+  nav .openMenu,
+  nav .closeMenu {
+    display: none;
+  }
+
+  nav .mainMenu {
+    display: flex;
+    list-style: none;
+  }
+}
+
+@media (max-width: 768px) {
+  nav .mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    list-style: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 100px;
+    align-items: flex-start;
+    padding-left: 30px;
+    background: #6070ff;
+    color: #ebebff;
+    filter: blur(0.5px);
+    transition: top 1s ease;
+    display: none;
+  }
+
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  nav .openMenu {
+    display: block;
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    color: #396df2;
+  }
+
+  nav .mainMenu li a {
+    color: #ebebff;
+    font-weight: 900;
+  }
+
+  nav .mainMenu li a:hover {
+    background: none;
+    color: #172b4d;
+  }
+
+  .logo {
+    font-size: 14px;
+  }
 }
 
 .hero .greeting {
@@ -128,18 +201,6 @@ form p {
 }
 
 @media (min-width: 769px) {
-  .nav-list {
-    display: flex;
-    column-gap: 2rem;
-    position: absolute;
-    right: 0;
-    margin-right: 25px;
-  }
-
-  .nav-icon {
-    display: none;
-  }
-
   .myLogo {
     margin-left: 20px;
     padding: 14px;
@@ -195,7 +256,6 @@ form p {
     padding-top: 16px;
     margin-left: auto;
     margin-right: auto;
-    
   }
 
   .card-content #img2 {
@@ -366,6 +426,7 @@ form p {
   top: 3000px;
   left: 60px;
   right: 50px;
+  padding-top: 70px;
   display: grid;
   grid-template-rows: auto auto;
 }
@@ -464,7 +525,7 @@ form p {
 
 @media (min-width: 440px) {
   .self-intro {
-    top: 3400px;
+    top: 3500px;
   }
 }
 
@@ -528,13 +589,20 @@ form p {
   }
 
   .hero {
-    margin-left: 18%;
+    padding-top: 90px;
+    margin-left: 20px;
+    margin-top: 40px;
   }
 }
 
 .Languages li {
   border-bottom: 1px solid #396df2;
   border-width: 50%;
+}
+
+.lang-list li:hover {
+  background-color: #396df2;
+  color: #fff;
 }
 
 form {
@@ -553,7 +621,7 @@ form {
 }
 
 form h1 {
-  margin-left:auto ;
+  margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
   color: white;
@@ -578,7 +646,6 @@ form input {
   border-radius: 8px;
 }
 
-
 form button {
   margin-top: 10px;
   width: 150px;
@@ -593,8 +660,8 @@ form button {
 }
 
 button:hover {
-  color: white;
-  background-color: #6070ff;
+  color: #ebebff;
+  background-color: #172b4d;
 }
 
 @media (min-width: 375px) {
@@ -658,7 +725,6 @@ button:hover {
   form h1 {
     margin-left: auto;
     margin-right: auto;
-
   }
 
   .work-card {

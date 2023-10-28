@@ -13,18 +13,19 @@
 </head>
 
 <body>
-    <header class="navbar">
-        <div class="myLogo">MyLogo</div>
-        <ul class="nav-list">
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+    <header>
+    <div class="logo "><h1><a href="#home">Mylogo</a></h1></div>
+    <nav>
+        <div class="openMenu"> <i class="fa fa-bars" aria-hidden="true"></i></div>
+        <ul class="mainMenu">
+            <li><a href="#portfolio" class="navTag">Portfolio</a></li>
+            <li><a href="#about" class="navBag">About</a></li>
+            <li><a href="#contact1" class="navHag">Contact</a></li>
+            <div class="closeMenu"> <i class="fa fa-times" aria-hidden="true"></i></div>
         </ul>
-        <nav class="nav-icon">
-            <a href="#"><i class="fa-solid fa-bars"></i></a>
-        </nav>
+    </nav>
     </header>
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="main1">
             <img src="./image/header-shapes_mobile.png" alt="" class="bg-img">
             <img src="./image/Header bg@2x.png" alt="" class="des-img">
@@ -48,8 +49,8 @@
             </div>
         </div>
     </section>
-    <section class="work-card">
-        <div class="card-content">
+    <section class="work-card" id="portfolio">
+        <article class="card-content">
             <img src="./image/0ee55d428834f9c9a8b1f9f45bd8d0c8.png" class="img">
             <div class="cardtext">
                 <h2>Tonic</h2>
@@ -70,9 +71,9 @@
                 </ul>
                 <button type="button" class="btn">See Project</button>
             </div>
-        </div>
+        </article>
 
-        <div class="card-content">
+        <article class="card-content">
             <img src="./image/0f7f4ed55bb0e54949043dfad6a0f507.png" class="img" id="img2">
             <div class="cardtext" id="text">
                 <h2>Tonic</h2>
@@ -93,9 +94,9 @@
                 </ul>
                 <button type="button" class="btn">See Project</button>
             </div>
-        </div>
+        </article>
 
-        <div class="card-content">
+        <article class="card-content">
             <img src="./image/0ee55d428834f9c9a8b1f9f45bd8d0c8.png" class="img">
             <div class="cardtext">
                 <h2>Tonic</h2>
@@ -116,9 +117,10 @@
                 </ul>
                 <button type="button" class="btn">See Project</button>
             </div>
-        </div>
+        </article>
+       
 
-        <div class="card-content">
+       <article class="card-content">
             <img src="./image/0ee55d428834f9c9a8b1f9f45bd8d0c8.png" class="img" id="img2">
             <div class="cardtext" id="text">
                 <h2>Tonic</h2>
@@ -139,10 +141,10 @@
                 </ul>
                 <button type="button" class="btn">See Project</button>
             </div>
-        </div>
+        </article>
     </section>
 
-    <section class="self-intro">
+    <section class="self-intro" id="about">
         <div class="box1">
             <div class="aboutMe">About Myself</div>
             <div class="greeting1">Hello I’m a software developer! I can help you build a product , feature or website.
@@ -192,9 +194,9 @@
             </ul>
         </div>
     </section>
-<section>
+<section >
     <!-- modify this form HTML and place wherever you want your form -->
-    <form action="https://formspree.io/f/mwkdaqzw" method="POST">
+    <form action="https://formspree.io/f/mwkdaqzw" method="POST" id="contact1">
         <h1>Contact me</h1>
         <p>If you have an application you are interested in developing, a feature that you need built or a project that needs
         coding.
@@ -206,6 +208,7 @@
         <button type="submit">Get in touch</button>
     </form>
     </section>
+<script src="./index.js"></script>
 </body>
 
 </html>
