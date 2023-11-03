@@ -675,7 +675,7 @@ form .error-message {
   margin-left:12%;
   color:#ebebff;
   align-self: flex-start;
-  
+  font-size: 1rem; 
 } 
 button:hover {
   color: #ebebff;
