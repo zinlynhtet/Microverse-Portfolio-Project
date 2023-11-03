@@ -115,7 +115,7 @@ const modalImage = modal.querySelector('.modal-body img');
 const modalDescription = modal.querySelector('.grid-lorem');
 const modalSkills = modal.querySelector('.languagessss');
 const modalLiveButton = modal.querySelector('.button-container button:nth-child(1)');
-const modalSourceButton = modal.querySelector(".button-container button:nth-child(2)");
+const modalSourceButton = modal.querySelector('.button-container button:nth-child(2)');
 document.querySelectorAll('.btn').forEach((card) => {
   card.onclick = () => {
     const id = card.getAttribute('title');
@@ -134,10 +134,10 @@ document.querySelectorAll('.btn').forEach((card) => {
       modalSkills.append(li);
     }
   };
-  modalLiveButton.addEventListener("click", () => {
-      window.open(projects.liveLink);
+  modalLiveButton.addEventListener('click', () => {
+    window.open(projects.liveLink);
   });
-  modalSourceButton.addEventListener("click",() => {
-      window.open(projects.sourceLink);
+  modalSourceButton.addEventListener('click', () => {
+    window.open(projects.sourceLink);
   });
 });
