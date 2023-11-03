@@ -609,11 +609,11 @@ form p {
 }
 
 .languagessss li {
-  color: #396df2;
+  color:#396df2;
   background:lightgrey;
-  margin: 10px;
-  border-radius: 5px;
-  padding: 5px 10px;
+  margin:10px;
+  border-radius:5px;
+  padding:5px 10px;
 }
 
 .Languages li {
