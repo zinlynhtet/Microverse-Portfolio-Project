@@ -609,11 +609,11 @@ form p {
 }
 
 .languagessss li {
-  color: #ebebff;
-  background: #6780c2;
+  color: #396df2;
+  background:lightgrey;
   margin: 10px;
-  border-radius: 4px;
-  padding: 1px;
+  border-radius: 5px;
+  padding: 5px 10px;
 }
 
 .Languages li {
@@ -859,6 +859,8 @@ button:hover {
 
 .grid-lorem {
   padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  color: #344;
 }
 
 .button-container {
