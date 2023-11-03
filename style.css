@@ -600,11 +600,11 @@ form p {
 }
 
 .languagessss li {
-  background-color: #6486dc;
-    color: #fff;
+  color: #396df2;
+  background: lightgrey;
   margin: 10px;
-  border-radius: 4px;
-  padding: 1px;
+  border-radius: 5px;
+  padding: 5px 10px;
 }
 
 .Languages li {
@@ -670,12 +670,13 @@ form button {
   margin-left: 40px;
   border: none;
 }
+
 form .error-message {
   display: block;
-  margin-left:40px;
-  color:#ebebff;
-  
-} 
+  margin-left: 40px;
+  color: #ebebff;
+}
+
 button:hover {
   color: #ebebff;
   background-color: #172b4d;
@@ -855,6 +856,8 @@ button:hover {
 
 .grid-lorem {
   padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  color: #344;
 }
 
 .button-container {
