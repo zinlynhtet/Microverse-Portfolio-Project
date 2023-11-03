@@ -673,8 +673,10 @@ form button {
 
 form .error-message {
   display: block;
-  margin-left: 40px;
+  margin-left: 12%;
   color: #ebebff;
+  align-self: flex-start;
+  font-size: 1rem;
 }
 
 button:hover {
