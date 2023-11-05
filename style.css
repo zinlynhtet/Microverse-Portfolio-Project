@@ -31,10 +31,10 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  height: 60px;
+  height: 50px;
   display: flex;
   justify-content: space-between;
-  z-index: 100;
+  z-index: 1;
 }
 
 .logo a {
@@ -84,7 +84,7 @@ nav .mainMenu li a:hover {
     height: 100vh;
     position: fixed;
     top: 0;
-    right: 0;
+    width: 100%;
     left: 0;
     z-index: 10;
     list-style: none;
@@ -93,9 +93,7 @@ nav .mainMenu li a:hover {
     padding-top: 100px;
     align-items: flex-start;
     padding-left: 30px;
-    background: #6070ff;
-    color: #ebebff;
-    filter: blur(0.5px);
+    backdrop-filter: blur(15px);
     transition: top 1s ease;
     display: none;
   }
@@ -116,7 +114,7 @@ nav .mainMenu li a:hover {
   }
 
   nav .mainMenu li a {
-    color: #ebebff;
+    color: #396df2;
     font-weight: 900;
   }
 
@@ -353,6 +351,21 @@ form p {
   margin-top: 10px;
 }
 
+.footer span {
+  margin: 0 10px;
+  font-size: 1rem;
+  margin-left: 18px;
+}
+
+.grid-button span {
+  background: #ebebff;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 2px;
+  color: #6547ed;
+  margin: 20px 10px;
+}
+
 .brief-list span:first-child {
   color: #344563;
   font-size: 13px;
@@ -463,7 +476,7 @@ form p {
   margin: 12px 0;
 }
 
-.btn-res {
+.resume {
   color: #396df2;
   font-size: 17px;
   font-family: 'Poppins', sans-serif;
@@ -476,7 +489,7 @@ form p {
   border: 1px solid #6070ff;
 }
 
-.btn-res:hover {
+.resume:hover {
   color: white;
   background-color: #6070ff;
 }
@@ -593,6 +606,14 @@ form p {
     margin-left: 20px;
     margin-top: 40px;
   }
+}
+
+.languagessss li {
+  color: #396df2;
+  background: lightgrey;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 5px 10px;
 }
 
 .Languages li {
@@ -780,4 +801,124 @@ button:hover {
   .report {
     width: 50%;
   }
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 600px;
+  max-width: 80%;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-button {
+  font-size: 30px;
+  font-weight: 900;
+  cursor: pointer;
+  background: none;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.contentt {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.modal-body img {
+  width: 100%;
+  padding: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 10px;
+}
+
+.grid-lorem {
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  color: #344;
+}
+
+.button-container {
+  text-align: center;
+  letter-spacing: 1rem;
+  margin: 20px;
+}
+
+.live {
+  width: 120px;
+  font-size: 14px;
+  color: #6547ed;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #6547ed;
+  cursor: pointer;
+  outline: none;
+}
+
+.live .fa-solid,
+.live .fa-brands {
+  margin-left: 10px;
+}
+
+.button-container :hover {
+  background-color: #6547ed;
+  color: #ebebff;
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .button-container {
+    margin: 10px;
+  }
+}
+
+#overlay {
+  position: fixed;
+  transition: 200ms ease-in-out;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  z-index: 1;
+}
+
+#overlay.active {
+  pointer-events: all;
+  opacity: 1;
+}
+
+.languagessss {
+  display: flex;
+  list-style: none;
 }
