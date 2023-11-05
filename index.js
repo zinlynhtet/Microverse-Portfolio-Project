@@ -65,8 +65,8 @@ const projects = [
     year: '2015',
     lorem: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     language: ['HTML', 'CSS', 'JavaScript'],
-    liveLink: 'https://example.com/project2',
-    sourceLink: 'https://github.com/project2',
+    liveLink: 'https://ordinarymack.github.io/Portfolio-Contact-form/',
+    sourceLink: 'https://github.com/OrdinaryMack/Portfolio-Contact-form',
   },
   {
     imagePath: './image/679f12c86bb033399c6b604b71698f3c.png',
@@ -76,8 +76,8 @@ const projects = [
     year: '2015',
     lorem: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     language: ['HTML', 'CSS', 'JavaScript'],
-    liveLink: 'https://example.com/project2',
-    sourceLink: 'https://github.com/project2',
+    liveLink: 'https://ordinarymack.github.io/Portfolio-Contact-form/',
+    sourceLink: 'https://github.com/OrdinaryMack/Portfolio-Contact-form',
   },
   {
 
@@ -88,8 +88,8 @@ const projects = [
     year: '2015',
     lorem: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     language: ['HTML', 'CSS', 'JavaScript'],
-    liveLink: 'https://example.com/project2',
-    sourceLink: 'https://github.com/project2',
+    liveLink: 'https://ordinarymack.github.io/Portfolio-Contact-form/',
+    sourceLink: 'https://github.com/OrdinaryMack/Portfolio-Contact-form',
   },
   {
 
@@ -100,8 +100,8 @@ const projects = [
     year: '2015',
     lorem: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     language: ['HTML', 'CSS', 'JavaScript'],
-    liveLink: 'https://example.com/project2',
-    sourceLink: 'https://github.com/project2',
+    liveLink: 'https://ordinarymack.github.io/Portfolio-Contact-form/',
+    sourceLink: 'https://github.com/OrdinaryMack/Portfolio-Contact-form',
   },
 ];
 
@@ -127,6 +127,12 @@ document.querySelectorAll('.btn').forEach((card) => {
     modalImage.src = projects[id].imagePath;
     modalDescription.textContent = projects[id].lorem;
     modalSkills.textContent = '';
+    modalLiveButton.addEventListener('click', () => {
+      window.open(projects[id].liveLink);
+    });
+    modalSourceButton.addEventListener('click', () => {
+      window.open(projects[id].sourceLink);
+    });
     // eslint-disable-next-line no-plusplus
     for (let i = 0; i < projects[id].language.length; i++) {
       const li = document.createElement('li');
@@ -134,12 +140,7 @@ document.querySelectorAll('.btn').forEach((card) => {
       modalSkills.append(li);
     }
   };
-  modalLiveButton.addEventListener('click', () => {
-    window.open(projects.liveLink);
-  });
-  modalSourceButton.addEventListener('click', () => {
-    window.open(projects.sourceLink);
-  });
+ 
 });
 // form
 const userName = document.getElementById('name');

@@ -227,15 +227,15 @@
     </section>
 <section >
     <!-- modify this form HTML and place wherever you want your form -->
-        <form action="/" method="POST" id="contact1">
+        <form action="https://formspree.io/f/xknlevna" method="POST" id="contact1">
             <h1>Contact me</h1>
             <p>If you have an application you are interested in developing, a feature that you need built, or a project that
                 needs coding. I’d love to help with it!</p>
-            <input type="text" class="userName" placeholder="lorem Ipsum" maxlength="30" id="name" required>
+            <input type="text" class="userName" placeholder="Enter your name" maxlength="30" id="name" name="userName" required>
             <span class="error-message" id="name-error"></span>
-            <input type="email" class="email" id="email" placeholder="youremail@gmail.com" required>
+            <input type="email" class="email" id="email" placeholder="Enter your email" name="email" required>
             <small class="error-message" id="email-error"></small>
-            <textarea class="report" id="textarea" cols="30" rows="10" maxlength="500"
+            <textarea class="report" id="textarea" cols="30" rows="10" maxlength="500"name="letters"
                 placeholder="Write your message (500 max words)" required></textarea>
             <!-- your other form fields go here -->
             <button type="submit">Get in touch</button>
