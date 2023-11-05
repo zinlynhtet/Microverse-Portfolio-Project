@@ -34,7 +34,7 @@ header {
   height: 50px;
   display: flex;
   justify-content: space-between;
-  z-index: 100;
+  z-index: 1;
 }
 
 .logo a {
@@ -910,6 +910,7 @@ button:hover {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
   pointer-events: none;
+  z-index: 1;
 }
 
 #overlay.active {
