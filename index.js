@@ -140,3 +140,33 @@ document.querySelectorAll('.btn').forEach((card) => {
       modalSkills.append(li);
     }
   };
+  // form
+const userName = document.getElementById('name');
+const mail = document.getElementById('email');
+const form = document.getElementById('contact1');
+const nameError = document.getElementById('name-error');
+const emailError = document.getElementById('email-error');
+const errorElement = document.getElementById('error');
+
+form.addEventListener('submit', (e) => {
+  const messages = [];
+
+  if (userName.value.trim() === '') {
+    messages.push('Name is required.');
+    nameError.textContent = 'Name is required.';
+  } else {
+    nameError.textContent = ''; // Clear the error message
+  }
+
+  const mailInput = mail.value;
+  if (mailInput !== mailInput.toLowerCase()) {
+    e.preventDefault();
+    emailError.textContent = 'Email must be in lowercase.';
+  } else {
+    emailError.textContent = '';
+  }
+  if (messages.length < 0) {
+    e.preventDefault();
+    errorElement.innerHTML = messages.join(', ');
+  }
+});
