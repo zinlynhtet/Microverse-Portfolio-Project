@@ -357,6 +357,15 @@ form p {
   margin-left: 18px;
 }
 
+.grid-button span {
+  background: #ebebff;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 2px;
+  color: #6547ed;
+  margin: 20px 10px;
+}
+
 .brief-list span:first-child {
   color: #344563;
   font-size: 13px;
@@ -671,14 +680,6 @@ form button {
   border: none;
 }
 
-form .error-message {
-  display: block;
-  margin-left: 12%;
-  color: #ebebff;
-  align-self: flex-start;
-  font-size: 1rem;
-}
-
 button:hover {
   color: #ebebff;
   background-color: #172b4d;
@@ -909,12 +910,12 @@ button:hover {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
   pointer-events: none;
+  z-index: 1;
 }
 
 #overlay.active {
   pointer-events: all;
   opacity: 1;
-  z-index: 1;
 }
 
 .languagessss {

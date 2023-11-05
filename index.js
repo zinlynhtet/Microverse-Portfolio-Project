@@ -140,7 +140,6 @@ document.querySelectorAll('.btn').forEach((card) => {
       modalSkills.append(li);
     }
   };
- 
 });
 // form
 const userName = document.getElementById('name');
