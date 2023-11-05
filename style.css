@@ -476,7 +476,7 @@ form p {
   margin: 12px 0;
 }
 
-.btn-res {
+.resume {
   color: #396df2;
   font-size: 17px;
   font-family: 'Poppins', sans-serif;
@@ -489,7 +489,7 @@ form p {
   border: 1px solid #6070ff;
 }
 
-.btn-res:hover {
+.resume:hover {
   color: white;
   background-color: #6070ff;
 }

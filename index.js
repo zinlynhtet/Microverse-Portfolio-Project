@@ -140,4 +140,3 @@ document.querySelectorAll('.btn').forEach((card) => {
       modalSkills.append(li);
     }
   };
-});
