@@ -232,11 +232,14 @@
         <p>If you have an application you are interested in developing, a feature that you need built or a project that needs
         coding.
         I’d love to help with it!</p>
-                <input type="text" class="userName" placeholder="Enter your name" maxlength="30" name="userName" required>
-                <input type="email" class="email" id="#" placeholder="Enter your email"name="email" required>
-                <textarea class="report" id="#" cols="30" rows="10" maxlength="500" name="letters" placeholder="Write your message 500 max words" required></textarea>
-        <!-- your other form fields go here -->
-        <button type="submit" >Get in touch</button>
+        <input type="text" class="userName" placeholder="Enter your name" maxlength="30" name="userName" id="name" required>
+        <span class="error-message" id="name-error"></span>
+        <input type="email" class="email" id="email" placeholder="Enter your email" name="email"  required>
+        <span class="error-message" id="email-error"></span>
+        <textarea class="report" id="textarea" cols="30" rows="10" name="letters" maxlength="500"
+            placeholder="Write your message (500 max words)" required></textarea>
+        <span class="error-message" id="textarea-error"></span>
+        <button type="submit">Get in touch</button>
     </form>
     </section>
 <script src="./index.js"></script>
