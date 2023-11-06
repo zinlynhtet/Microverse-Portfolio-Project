@@ -667,6 +667,14 @@ form input {
   border-radius: 8px;
 }
 
+form .error-message {
+  display: block;
+  margin-left: 12%;
+  color: #ebebff;
+  align-self: flex-start;
+  font-size: 1rem;
+}
+
 form button {
   margin-top: 10px;
   width: 150px;
@@ -741,6 +749,10 @@ button:hover {
     top: 4900px;
     justify-content: center;
     align-items: center;
+  }
+
+  form .error-message {
+    margin-left: 26%;
   }
 
   form h1 {
