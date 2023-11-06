@@ -171,3 +171,34 @@ form.addEventListener('submit', (e) => {
     errorElement.innerHTML = messages.join(', ');
   }
 });
+// Function to save form data to local storage
+function saveFormData() {
+  const formData = {
+    name: document.getElementById('name').value,
+    email: document.getElementById('email').value,
+    letters: document.querySelector('.report').value,
+  };
+
+  // Convert the data to a JSON string and save it to local storage
+  localStorage.setItem('formData', JSON.stringify(formData));
+}
+function loadFormData() {
+  const storedData = localStorage.getItem('formData');
+
+  if (storedData) {
+    const formData = JSON.parse(storedData);
+    document.getElementById('name').value = formData.name;
+    document.getElementById('email').value = formData.email;
+    document.querySelector('.report').value = formData.letters;
+  }
+}
+
+const inputFields = document.querySelectorAll('input');
+const textarea = document.querySelector('.report');
+
+inputFields.forEach((input) => {
+  input.addEventListener('input', saveFormData);
+});
+
+textarea.addEventListener('input', saveFormData);
+loadFormData();
